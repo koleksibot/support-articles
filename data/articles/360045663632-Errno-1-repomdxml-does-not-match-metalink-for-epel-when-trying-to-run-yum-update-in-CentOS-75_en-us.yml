@@ -1,0 +1,13 @@
+id: 360045663632
+title: >-
+  “[Errno -1] repomd.xml does not match metalink for epel” when trying to run
+  yum update in CentOS 7.5
+author_id: 365473206774
+created_at: '2020-07-10T07:38:53Z'
+locale: en-us
+permission_group_id: 237867
+section_id: 115003327208
+user_segment_id: null
+html_url: >-
+  https://support.circleci.com/hc/en-us/articles/360045663632--Errno-1-repomd-xml-does-not-match-metalink-for-epel-when-trying-to-run-yum-update-in-CentOS-7-5
+draft: false

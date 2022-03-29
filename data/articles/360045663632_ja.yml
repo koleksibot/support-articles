@@ -1,0 +1,12 @@
+id: 360045663632
+title: >-
+  CentOS 7.5 で yum updateを実行するときに、「[Errno -1] repomd.xml does not match metalink
+  for epel」というエラーが表示される
+author_id: 365473206774
+created_at: '2020-07-10T07:38:53Z'
+locale: ja
+permission_group_id: 237867
+section_id: 115003327208
+user_segment_id: null
+html_url: https://support.circleci.com/hc/ja/articles/360045663632
+draft: false

@@ -1,0 +1,21 @@
+<h3>To connect to a MacOS container via VNC:</h3>
+<ul>
+    <li>Add the following step to the job you wish to VNC into:</li>
+</ul>
+<pre><code>      run:
+        name: Add VNC user
+      	command: sudo /usr/sbin/sysadminctl -addUser vncuser -fullName "VNC User" -password &lt;&lt;password&gt;&gt; -admin</code></pre>
+<p><em>Tip: Replace <code>&lt;&lt;password&gt;&gt;</code> with a password of your choosing.</em></p>
+<ul>
+    <li>Select the macOS job in question and click the <strong><em>Rerun</em> </strong>button, then <strong><em><a href="https://circleci.com/docs/2.0/ssh-access-jobs/" target="_blank" rel="noopener">Rerun Job with SSH</a></em></strong>
+    </li>
+    <li>Configure SSH port-forwarding <span class="wysiwyg-underline">on your local machine</span>:
+        <ul>
+            <li><code>ssh -p 54782 &lt;mac container ip&gt; -L5901:localhost:5900 -N</code></li>
+        </ul>
+    </li>
+    <li>
+        <a href="https://www.realvnc.com/en/connect/download/viewer/" target="_blank" rel="noopener">Download</a><span> and install VNC Viewer and access <code>localhost:5901</code></span>
+    </li>
+    <li>Use the credentials <code>vncuser/&lt;&lt;password&gt;&gt;</code> when prompted.</li>
+</ul>

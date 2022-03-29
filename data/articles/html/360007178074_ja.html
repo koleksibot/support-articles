@@ -1,0 +1,5 @@
+<p> </p>
+<p>これは多くの理由から発生する可能性がありますが、最も一般的な理由の1つは、bash 構成オプションによるものです。このオプションは <strong>globstar</strong> と呼ばれます。globstar はデフォルトでオフになっていることがあり、オンにする必要があります。例えば、再帰的 glob パターン <strong>**</strong> を使用してサブフォルダーへの再帰を行うには、<strong>globstar がオンになっている必要があります。</strong></p>
+<p>bash v4 またはそれ以降を使用している場合、<strong><code>shopt -s globstar</code></strong>でオプションをオンすることができます。また CircleCIでは、各ステップは別々のサブシェルで実行されるため、各ステップの開始時に設定する必要があることに注意してください。</p>
+<p>この glob パターンがフォルダを越えて再帰することを望まない場合は、<strong><code>shopt -u globstar</code></strong> でこのオプションをオフにすることができます。</p>
+<p><iframe src="//www.youtube-nocookie.com/embed/fq-on5AUinE" width="560" height="315" frameborder="0" allowfullscreen=""></iframe></p>
